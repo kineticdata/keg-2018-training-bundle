@@ -1,0 +1,37 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *   Queue List ~ Queue
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.queue-list-container {
+  .controls {
+    border-bottom: 2px solid $gray4;
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    h6 {
+      color: $blueLake;
+      font-size: 0.875rem;
+      margin: 0;
+      padding: 0.5625rem 0;
+      small {
+        font-size: 80%;
+      }
+    }
+    .nav-buttons,
+    .buttons {
+      // display: flex;
+      align-self: center;
+      button {
+        padding: 0.25rem;
+      }
+    }
+    .nav-buttons {
+      font-size: 0.5rem;
+    }
+  }
+
+  .queue-list-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+  }
+}

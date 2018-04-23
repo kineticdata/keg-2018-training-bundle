@@ -1,0 +1,90 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *   Sidebar ~ kinops
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.sidebar {
+  background-color: $black-3;
+  border-right: 1px solid $black-16;
+  margin-top: $header-height;
+  min-height: $page-height;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5rem 0;
+  width: 252px;
+  // Major action button for kapp
+  .btn {
+    &.btn-sidebar-action {
+      margin: 0.75rem 1.5rem;
+    }
+  }
+  // Grouping of related links
+  .sidebar-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0.75rem 0 0 0;
+    list-style: none;
+    // Group Title
+    h1 {
+      color: $blueLake;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      font-size: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      margin: 0;
+      text-transform: uppercase;
+      justify-content: space-between;
+      // Group Title Link or action
+      a {
+        line-height: normal;
+        margin-left: auto;
+        text-transform: none;
+        color: $gray;
+        &:hover {
+          color: $blueLake;
+        }
+      }
+      // Group Title Button color
+      .btn-icon {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .card-icon {
+      margin-top: 0;
+    }
+    .nav-link {
+      border-left: 3px solid $black-3;
+      color: $gray;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      margin: 0 0 0.75rem 0;
+      font-size: 0.875rem;
+      padding: 0.25rem 1.5rem;
+      transition: border-left-color 0.5s, color 0.5s;
+      .fa {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+      }
+      &.active,
+      &:hover {
+        border-left-color: $blueLake;
+        color: $blueLake;
+      }
+    }
+  }
+
+  .settings-group {
+    .nav-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
+}

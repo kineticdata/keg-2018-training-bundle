@@ -1,0 +1,112 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *   Queue Item Details ~ Queue
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.queue .queue-item-details {
+  background-color: $white;
+  position: relative;
+
+  .scroll-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .general {
+    color: $blueLake;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: $black;
+      margin: 0;
+      line-height: 3rem;
+    }
+
+    .summary {
+      @include ms-respond(font-size, -1);
+      line-height: 1.5rem;
+      color: $black;
+    }
+
+    .actions {
+      display: flex;
+
+      .assignment-badge {
+        flex-grow: 1;
+      }
+
+      .wally-button {
+        border-radius: 0;
+        margin: 1.5rem 0;
+        padding: 0 1.5rem;
+      }
+    }
+
+    pre {
+      color: $blueLake;
+      @include ms-respond(font-size, -2);
+      line-height: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .request-button {
+    display: block;
+    width: 100%;
+  }
+
+  .subtasks-section {
+    margin: 1.5rem;
+    @media (max-width: 767px) {
+      margin-bottom: 4rem;
+    }
+
+    .submissions {
+      border-top: 1px solid $border-color;
+    }
+
+    .submission {
+      padding: 0.75rem;
+    }
+
+    .empty-subtasks {
+      border-radius: 0.5rem;
+      background-color: $black-3;
+      text-align: center;
+      padding: 1.5em;
+      h5 {
+        color: $blueLake;
+        font-size: 14px;
+        @include ms-respond(font-size, 2);
+        font-weight: 600;
+        line-height: 1.5rem;
+      }
+
+      h6 {
+        color: $blueGray;
+        @include ms-respond(font-size, -1);
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .general .timestamps {
+    margin: 1.5rem 0 0;
+    .timestamp {
+      @include ms-respond(font-size, -1);
+      line-height: 1.5rem;
+      padding: 0 2rem;
+      .label {
+        color: $gray;
+        width: 70px;
+      }
+      .value {
+        color: $blueLake;
+      }
+    }
+  }
+}

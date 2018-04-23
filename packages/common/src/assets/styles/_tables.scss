@@ -1,0 +1,38 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *   Tables ~ Common
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Attachment files
+ *-------------------------------------- */
+.empty > .file-table > .file-header {
+  display: none;
+}
+
+.file-table {
+  display: table;
+  margin: 0px;
+  padding: 0px;
+}
+
+.file-row {
+  display: table-row;
+  > span {
+    display: table-cell;
+    padding: 0.5rem;
+    > a {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.file-header {
+  display: table-header-group;
+  font-weight: 700;
+  span {
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.file-container {
+  display: table-row-group;
+}
